@@ -2,3 +2,8 @@
 @import "variables.scss";
 @import "fonts.scss";
 @import "./homepage/homepage.scss";
+
+#root {
+	position: relative;
+	overflow: hidden;
+}
