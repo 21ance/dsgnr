@@ -20,7 +20,7 @@ section.section-one {
 		font-size: 100px;
 		font-family: RoobertBold;
 		padding: 100px 0 100px 350px;
-		width: 15ch;
+		width: 12ch;
 		color: $dark-font;
 	}
 
@@ -66,5 +66,97 @@ section.section-one {
 		top: 20%;
 		width: 450px;
 		right: 0;
+	}
+}
+
+@media only screen and (max-width: 1550px) {
+	body {
+		section.section-one {
+			span.hero-text {
+				font-size: 90px;
+			}
+
+			img.hand-lower-left {
+				position: absolute;
+				bottom: 0;
+				height: 400px;
+			}
+
+			img.hand-middle-right {
+				position: absolute;
+				top: 20%;
+				width: 300px;
+				right: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	body {
+		section.section-one {
+			span.hero-text {
+				padding: 90px 0 100px 40px;
+			}
+
+			button.cta {
+				margin-left: 40px;
+			}
+
+			img.hand-lower-left {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				transform: scaleX(-1);
+			}
+
+			img.hand-middle-right {
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		section.section-one {
+			span.hero-text {
+				font-size: 70px;
+			}
+
+			button.cta {
+				font-size: 20px;
+			}
+
+			img.hand-lower-left {
+				height: 350px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		section.section-one {
+			span.hero-text {
+				font-size: 2.5rem;
+				padding: 90px 0 80px 40px;
+			}
+
+			button.cta {
+				font-size: 1rem;
+			}
+
+			button.cta::before {
+				content: "";
+				width: 70px;
+				height: 70px;
+				left: -30px;
+			}
+
+			img.hand-lower-left {
+				height: 300px;
+			}
+		}
 	}
 }
