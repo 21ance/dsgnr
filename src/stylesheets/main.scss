@@ -1,3 +1,4 @@
-h1 {
-	color: red;
-}
+@import "reset.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "./homepage/homepage.scss";
