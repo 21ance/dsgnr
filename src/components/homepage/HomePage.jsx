@@ -6,8 +6,12 @@ import hand_ok from "../../images/hand_ok.png";
 import Services from "./sectionTwo/Services";
 import Intro from "./sectionTwo/Intro";
 import GalleryNav from "./sectionThree/GalleryNav";
+import Gallery from "./sectionThree/Gallery";
+import { useState } from "react";
 
 const HomePage = () => {
+	const [activeNav, setActiveNav] = useState("All");
+
 	return (
 		<>
 			<section className="section-one">
@@ -32,8 +36,9 @@ const HomePage = () => {
 			<section className="section-three">
 				<header>
 					<h2>Our work so far</h2>
-					<GalleryNav />
+					<GalleryNav activeNav={activeNav} setActiveNav={setActiveNav} />
 				</header>
+				<Gallery activeNav={activeNav} />
 			</section>
 		</>
 	);

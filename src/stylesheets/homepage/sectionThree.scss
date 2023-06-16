@@ -16,6 +16,7 @@ section.section-three {
 			font-family: RoobertMedium, sans-serif;
 			display: flex;
 			gap: 50px;
+			align-self: flex-end;
 
 			span {
 				cursor: pointer;
@@ -25,6 +26,7 @@ section.section-three {
 
 			.active-link {
 				color: $dark-font;
+				transition: 2s;
 			}
 
 			.active-link::after {
@@ -33,6 +35,98 @@ section.section-three {
 				background: black;
 				display: block;
 				margin-top: 2px;
+			}
+		}
+	}
+
+	article.image-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		gap: 10px;
+
+		img {
+			width: 100%;
+		}
+
+		img:nth-child(3) {
+			grid-row: 1 / 3;
+			grid-column: 2 / 3;
+		}
+	}
+}
+
+@media only screen and (max-width: 1225px) {
+	body {
+		section.section-three {
+			header {
+				padding: 50px 0;
+
+				h2 {
+					font-size: 2.5rem;
+				}
+
+				nav {
+					font-size: 1.2rem;
+					gap: 40px;
+				}
+			}
+
+			article.image-container {
+				grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+				gap: 5px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	body {
+		section.section-three {
+			header {
+				h2 {
+					font-size: 2rem;
+				}
+
+				nav {
+					font-size: 1rem;
+					gap: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	body {
+		section.section-three {
+			header {
+				flex-direction: column;
+				padding: 50px 0 25px 0;
+				gap: 20px;
+
+				h2 {
+					font-size: 2.5rem;
+				}
+
+				nav {
+					align-self: center;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		section.section-three {
+			header {
+				nav {
+					gap: 10px;
+					font-size: 0.9rem;
+				}
+			}
+			article.image-container {
+				grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 			}
 		}
 	}

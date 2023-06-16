@@ -1,7 +1,5 @@
-import { useState } from "react";
-
-const GalleryNav = () => {
-	const [activeNav, setActiveNav] = useState("All");
+const GalleryNav = (props) => {
+	const { activeNav, setActiveNav } = props;
 
 	return (
 		<nav>

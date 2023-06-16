@@ -8,7 +8,7 @@ const Services = () => {
 	return (
 		<div className="services">
 			<IconText
-				icon={codeIcon}
+				icon={designIcon}
 				iconAlt="code-icon"
 				text="Exceptional design"
 			/>
@@ -23,7 +23,7 @@ const Services = () => {
 				text="Product management"
 			/>
 			<IconText
-				icon={designIcon}
+				icon={codeIcon}
 				iconAlt="code-icon"
 				text="No-code development"
 			/>
