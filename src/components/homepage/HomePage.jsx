@@ -4,6 +4,7 @@ import Hand from "./sectionOne/Hand";
 import hand_two_fingers from "../../images/hand_two_fingers.png";
 import hand_ok from "../../images/hand_ok.png";
 import Services from "./sectionTwo/Services";
+import Intro from "./sectionTwo/Intro";
 
 const HomePage = () => {
 	return (
@@ -25,6 +26,7 @@ const HomePage = () => {
 			</section>
 			<section className="section-two">
 				<Services />
+				<Intro />
 			</section>
 		</>
 	);
