@@ -1,0 +1,27 @@
+section.section-two {
+	position: relative;
+	background-color: $white;
+
+	.services {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 10vw;
+		padding: 75px 0 75px 0;
+
+		.icon-text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-transform: uppercase;
+			font-family: RoobertBold;
+			font-size: 18px;
+			gap: 20px;
+			text-align: center;
+
+			img {
+				width: 50px;
+			}
+		}
+	}
+}
