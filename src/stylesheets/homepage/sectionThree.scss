@@ -1,0 +1,39 @@
+section.section-three {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 75px 0;
+
+		h2 {
+			font-family: RoobertHeavy, sans-serif;
+			font-size: 44px;
+		}
+
+		nav {
+			color: $dark-font;
+			font-size: 20px;
+			font-family: RoobertMedium, sans-serif;
+			display: flex;
+			gap: 50px;
+
+			span {
+				cursor: pointer;
+				color: rgba(16, 16, 16, 0.5);
+				text-transform: uppercase;
+			}
+
+			.active-link {
+				color: $dark-font;
+			}
+
+			.active-link::after {
+				content: "";
+				height: 2px;
+				background: black;
+				display: block;
+				margin-top: 2px;
+			}
+		}
+	}
+}
