@@ -8,7 +8,7 @@ section.section-two {
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 10vw;
-		padding: 75px 0 75px 0;
+		padding: $small-gap;
 
 		.icon-text {
 			display: flex;
@@ -32,7 +32,7 @@ section.section-two {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		padding: 125px 0 125px 0;
+		padding: $big-gap;
 		height: fit-content;
 
 		h2 {
@@ -99,7 +99,7 @@ section.section-two {
 			}
 
 			.intro {
-				padding: 75px 0 75px 0;
+				padding: $small-gap;
 
 				h2 {
 					display: none;

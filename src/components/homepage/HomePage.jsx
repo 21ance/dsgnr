@@ -7,6 +7,8 @@ import Services from "./sectionTwo/Services";
 import Intro from "./sectionTwo/Intro";
 import GalleryNav from "./sectionThree/GalleryNav";
 import Gallery from "./sectionThree/Gallery";
+import SectionFour from "./sectionFour/SectionFour";
+
 import { useState } from "react";
 
 const HomePage = () => {
@@ -40,6 +42,7 @@ const HomePage = () => {
 				</header>
 				<Gallery activeNav={activeNav} />
 			</section>
+			<SectionFour />
 		</>
 	);
 };

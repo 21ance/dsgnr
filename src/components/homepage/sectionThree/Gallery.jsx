@@ -9,7 +9,7 @@ import Img7 from "../../../images/gallery/img07.jpg";
 const Gallery = (props) => {
 	const { activeNav } = props;
 	const allImageArray = [Img1, Img2, Img3, Img4, Img5, Img6, Img7];
-	const brandingArray = [Img2, Img3, Img4];
+	const brandingArray = [Img2, Img4, Img3];
 	const illustrationArray = [Img1, Img5];
 	const productDesignArray = [Img7, Img6];
 	return (
