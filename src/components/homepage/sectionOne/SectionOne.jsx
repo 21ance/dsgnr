@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "../../Header";
 import Hand from "./Hand";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import hand_two_fingers from "../../../images/hand_two_fingers.png";

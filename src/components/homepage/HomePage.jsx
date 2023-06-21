@@ -3,6 +3,7 @@ import SectionTwo from "./sectionTwo/SectionTwo";
 import SectionThree from "./sectionThree/SectionThree";
 import SectionFour from "./sectionFour/SectionFour";
 import SectionFive from "./sectionFive/SectionFive";
+import PastClients from "../PastClients";
 
 const HomePage = () => {
 	return (
@@ -12,6 +13,7 @@ const HomePage = () => {
 			<SectionThree />
 			<SectionFour />
 			<SectionFive />
+			<PastClients />
 		</>
 	);
 };
