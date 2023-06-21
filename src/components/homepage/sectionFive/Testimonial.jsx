@@ -1,20 +1,29 @@
-import { Carousel } from "@trendyol-js/react-carousel";
+import Slider from "react-slick";
 import AvatarMale from "../../../images/avatar/male.png";
 import AvatarFemale from "../../../images/avatar/female.png";
 import QuoteLeft from "../../../images/left_quote.png";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 const Testimonial = () => {
+	let settings = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					infinite: true,
+					dots: true,
+				},
+			},
+		],
+	};
+
 	return (
-		<Carousel
-			infinite={true}
-			swiping={true}
-			show={2}
-			responsive={true}
-			rightArrow={false}
-			leftArrow={false}
-			className="testimonial-carousel"
-		>
+		<Slider {...settings} className="testimonial-carousel">
 			<Quote
 				text="I would like to say that this experience was great. The team was very professional and answered all our questions and was committed to completing our project on time. We are happy to have worked with dsgnr. and would hire them again and would recommend them to anyone else looking for a designer and developer. They know their stuff!"
 				avatar={AvatarMale}
@@ -35,7 +44,7 @@ const Testimonial = () => {
 				author="Lorem ipsum dolor"
 				autorTitle="Morbi volutpat quis"
 			/>
-		</Carousel>
+		</Slider>
 	);
 };
 
