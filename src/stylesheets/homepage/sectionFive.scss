@@ -1,0 +1,61 @@
+section.section-five {
+	margin: $big-gap;
+
+	h2 {
+		font-family: RoobertBold, sans-serif;
+		font-size: 44px;
+		text-align: center;
+		margin: $small-gap;
+	}
+
+	.testimonial-carousel {
+		display: flex;
+		align-items: center;
+		margin: $small-gap;
+
+		.testimonial-quote {
+			display: grid;
+			justify-content: center;
+			position: relative;
+			grid-template-columns: auto auto;
+
+			& > img {
+				grid-row: 1 / 3;
+				padding: 0 20px;
+			}
+
+			p {
+				font-family: RoobertMedium, sans-serif;
+				width: 43ch;
+				font-size: 22px;
+				line-height: 32px;
+				height: calc(6em + 100px);
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.avatar {
+				display: grid;
+				grid-template-columns: auto 1fr;
+				column-gap: 25px;
+
+				img {
+					grid-row: 1 / 3;
+				}
+
+				h3 {
+					font-family: RoobertBold, sans-serif;
+					font-size: 24px;
+					align-self: center;
+				}
+
+				span {
+					font-family: RoobertMedium, sans-serif;
+					font-size: 19px;
+					color: $dark-font-opac;
+					align-self: center;
+				}
+			}
+		}
+	}
+}
