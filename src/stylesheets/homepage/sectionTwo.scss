@@ -9,6 +9,7 @@ section.section-two {
 		flex-wrap: wrap;
 		gap: 10vw;
 		padding: $small-gap;
+		padding-bottom: 0;
 
 		.icon-text {
 			display: flex;

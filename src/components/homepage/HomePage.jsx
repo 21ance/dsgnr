@@ -4,6 +4,7 @@ import SectionThree from "./sectionThree/SectionThree";
 import SectionFour from "./sectionFour/SectionFour";
 import SectionFive from "./sectionFive/SectionFive";
 import PastClients from "../PastClients";
+import Footer from "../Footer";
 
 const HomePage = () => {
 	return (
@@ -14,6 +15,7 @@ const HomePage = () => {
 			<SectionFour />
 			<SectionFive />
 			<PastClients />
+			<Footer />
 		</>
 	);
 };

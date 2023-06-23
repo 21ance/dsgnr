@@ -4,19 +4,6 @@ section.section-one {
 	position: relative;
 	z-index: 0;
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		padding: 20px 40px;
-		font-size: 2rem;
-
-		span.logo {
-			font-family: RoobertBold, sans-serif;
-			color: $white;
-			z-index: 1;
-		}
-	}
-
 	h1 {
 		display: block;
 		font-size: 100px;
