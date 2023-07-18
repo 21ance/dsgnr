@@ -1,8 +1,8 @@
 # Dsgnr Landing Page
 
-Front-end clothing e-commerce website with add to cart feature. The user can add, edit, and remove any clothing item to their cart. All changes made by the user is saved in the localstorage. 
+A sample landing page. The design if from [Figma Community](https://www.figma.com/community/file/1175007259106121022) in which I translated into code and is responsive on all viewports.
 
-All clothing items are read from a local JSON file (downloaded from [rapid API](https://rapidapi.com/apidojo/api/hm-hennes-mauritz)).
+I used ReactJS which is definitely overkill and unnecessary for this project in order to refresh my knowledge - since I took a short break from coding before this.
 
 ---
 
